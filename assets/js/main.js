@@ -19,6 +19,16 @@ navItem.forEach((item) => {
   });
 });
 
+// close the menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (navMenu.classList.contains("nav__menu--open")) {
+    if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+      navMenu.classList.remove("nav__menu--open");
+      changeIcon();
+    }
+  }
+});
+
 // Change nav toggle icon
 function changeIcon() {
   if (navMenu.classList.contains("nav__menu--open")) {
@@ -81,7 +91,7 @@ sr.reveal(
   {
     delay: 500,
     interval: 100,
-  }
+  },
 );
 
 sr.reveal(".qualification__footer-text, .contact__content", {

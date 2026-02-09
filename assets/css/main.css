@@ -401,6 +401,8 @@ body {
 
 .skills__item {
   margin-bottom: 1rem;
+  white-space: nowrap;
+  font-size: 1.5rem;
 }
 
 .skills__subtitle {

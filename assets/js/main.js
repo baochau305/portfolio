@@ -77,7 +77,7 @@ window.addEventListener("scroll", () => {
 
 // ScrollReveal animations
 const sr = ScrollReveal({
-  duration: 2000,
+  duration: 1000,
   distance: "100px",
   delay: 400,
   reset: false,
